@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="AddonName">Tint Browser Adblocker Addon</string>
+    <string name="AddonShortDescription">JavaScript-based adblocker.</string>
+    <string name="AddonDescription">This is an addon based on the now defunct AdSweep script.</string>
+    <string name="AddonContactEMail">your.email@something.org</string>
+    <string name="AddonContactWebsite">http://www.myaddon.org/</string>
+    
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="CannotBeUndone">This cannot be undone.</string>
+    
+    <string name="AdblockerPreferenceActivityTitle">Tint Browser adblocker addon</string>
+    <string name="AdblockerPreferenceActivitySubtitle">Adblocker white list</string>
+    <string name="AdblockerWhiteListEmpty">The adblocker white list is empty.</string>
+    <string name="AdblockerWhiteListMenuAdd">Add</string>
+    <string name="AdblockerWhiteListMenuClear">Clear</string>
+    <string name="AdblockerWhiteListMenuReset">Reset to default values</string>
+    <string name="AdblockerWhiteListDialogAddTitle">Add to white list</string>
+    <string name="AdblockerWhiteListDialogClearTitle">Clear white list</string>
+    <string name="AdblockerWhiteListDialogResetTitle">Reset to default values</string>
+    <string name="AdblockerWhiteListDialogRemoveItemTitle">Remove this item?</string>
+
+</resources>
