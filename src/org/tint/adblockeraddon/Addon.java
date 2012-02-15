@@ -4,12 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.tint.addons.BaseAddon;
-import org.tint.addons.framework.AddonAction;
-import org.tint.addons.framework.AddonCallbacks;
-import org.tint.addons.framework.AddonResponse;
+import org.tint.addons.framework.Action;
+import org.tint.addons.framework.Callbacks;
+import org.tint.addons.framework.LoadUrlAction;
 
 import android.app.Service;
 import android.content.Intent;
@@ -26,7 +27,7 @@ public class Addon extends BaseAddon {
 	
 	@Override
 	public int getCallbacks() throws RemoteException {
-		return AddonCallbacks.PAGE_FINISHED | AddonCallbacks.HAS_PREFERENCES_PAGE;
+		return Callbacks.PAGE_FINISHED | Callbacks.HAS_PREFERENCES_PAGE;
 		//return AddonCallbacks.PAGE_FINISHED | AddonCallbacks.HAS_PREFERENCES_PAGE | AddonCallbacks.CONTRIBUTE_MAIN_MENU | AddonCallbacks.CONTRIBUTE_LINK_CONTEXT_MENU;
 	}
 
@@ -66,17 +67,17 @@ public class Addon extends BaseAddon {
 	public void onUnbind() throws RemoteException {	}
 
 	@Override
-	public AddonResponse onPageStarted(String url) throws RemoteException {
+	public List<Action> onPageStarted(String url) throws RemoteException {
 		return null;
 	}
 	
 	@Override
-	public AddonResponse onPageFinished(String url) throws RemoteException {
+	public List<Action> onPageFinished(String url) throws RemoteException {
 		if ((url != null) &&
 				(!isUrlInAdblockerWhiteList(url))) {
 			if (mAdSweep != null) {
-				AddonResponse response = new AddonResponse();
-				response.addAction(new AddonAction(AddonAction.ACTION_LOAD_URL, mAdSweep));
+				List<Action> response = new ArrayList<Action>();
+				response.add(new LoadUrlAction(mAdSweep, true));
 
 				return response;
 			} else {
@@ -95,7 +96,7 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public AddonResponse onContributedMainMenuItemSelected(String currentTitle, String currentUrl) throws RemoteException {
+	public List<Action> onContributedMainMenuItemSelected(String currentTitle, String currentUrl) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		AddonResponse response = new AddonResponse();
@@ -105,14 +106,14 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public String getContributedLinkContextMenuItem() throws RemoteException {
+	public String getContributedLinkContextMenuItem(int hitTestResult, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		return "AdblockerLinkMenuItem";
 	}
 
 	@Override
-	public AddonResponse onContributedLinkContextMenuItemSelected(int hitTestResult, String url) throws RemoteException {
+	public List<Action> onContributedLinkContextMenuItemSelected(int hitTestResult, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 		
@@ -129,7 +130,7 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public AddonResponse onContributedHistoryBookmarksMenuItemSelected() throws RemoteException {
+	public List<Action> onContributedHistoryBookmarksMenuItemSelected() throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -141,7 +142,7 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public AddonResponse onContributedBookmarkContextMenuItemSelected(String title, String url) throws RemoteException {
+	public List<Action> onContributedBookmarkContextMenuItemSelected(String title, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -153,13 +154,13 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public AddonResponse onContributedHistoryContextMenuItemSelected(String title, String url) throws RemoteException {
+	public List<Action> onContributedHistoryContextMenuItemSelected(String title, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
 	@Override
-	public AddonResponse onUserAnswerQuestion(String questionId, boolean positiveAnswer) throws RemoteException {
+	public List<Action> onUserAnswerQuestion(String questionId, boolean positiveAnswer) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
