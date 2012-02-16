@@ -13,7 +13,7 @@
             android:name=".AddonService"
             android:exported="true" >
             <intent-filter>
-                <action android:name="org.tint.intent.action.PICK_ADDON" />
+                <action android:name="org.tint.intent.action.ADDON" />
                 <category android:name="org.tint.intent.category.ADBLOCKER_ADDON" />
             </intent-filter>
         </service>
