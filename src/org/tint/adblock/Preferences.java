@@ -13,9 +13,11 @@
  * GNU General Public License for more details.
  */
 
-package org.tint.adblockeraddon;
+package org.tint.adblock;
 
 import java.util.List;
+
+import org.tint.adblock.R;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;

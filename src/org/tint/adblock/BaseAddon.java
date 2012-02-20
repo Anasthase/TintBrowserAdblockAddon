@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package org.tint.addons;
+package org.tint.adblock;
 
-import org.tint.adblockeraddon.R;
+import org.tint.adblock.R;
 import org.tint.addons.framework.IAddon;
 
 import android.app.Service;

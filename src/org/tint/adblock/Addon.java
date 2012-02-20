@@ -1,4 +1,4 @@
-package org.tint.adblockeraddon;
+package org.tint.adblock;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.tint.addons.BaseAddon;
+import org.tint.adblock.R;
 import org.tint.addons.framework.Action;
 import org.tint.addons.framework.Callbacks;
 import org.tint.addons.framework.LoadUrlAction;
@@ -28,7 +28,6 @@ public class Addon extends BaseAddon {
 	@Override
 	public int getCallbacks() throws RemoteException {
 		return Callbacks.PAGE_FINISHED | Callbacks.HAS_PREFERENCES_PAGE;
-		//return AddonCallbacks.PAGE_FINISHED | AddonCallbacks.HAS_PREFERENCES_PAGE | AddonCallbacks.CONTRIBUTE_MAIN_MENU | AddonCallbacks.CONTRIBUTE_LINK_CONTEXT_MENU;
 	}
 
 	@Override

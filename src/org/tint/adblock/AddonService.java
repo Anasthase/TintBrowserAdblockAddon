@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.tint.adblockeraddon;
+package org.tint.adblock;
 
 import org.tint.addons.framework.IAddon;
 

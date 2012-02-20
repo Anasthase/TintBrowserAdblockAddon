@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  */
 
-package org.tint.adblockeraddon;
+package org.tint.adblock;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
