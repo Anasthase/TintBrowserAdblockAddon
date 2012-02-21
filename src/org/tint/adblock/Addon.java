@@ -66,12 +66,12 @@ public class Addon extends BaseAddon {
 	public void onUnbind() throws RemoteException {	}
 
 	@Override
-	public List<Action> onPageStarted(String url) throws RemoteException {
+	public List<Action> onPageStarted(String webViewId, String url) throws RemoteException {
 		return null;
 	}
 	
 	@Override
-	public List<Action> onPageFinished(String url) throws RemoteException {
+	public List<Action> onPageFinished(String webViewId, String url) throws RemoteException {
 		if ((url != null) &&
 				(!isUrlInAdblockerWhiteList(url))) {
 			if (mAdSweep != null) {
@@ -85,6 +85,18 @@ public class Addon extends BaseAddon {
 		} else {
 			return null;
 		}
+	}
+	
+	@Override
+	public List<Action> onTabClosed(String webViewId) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Action> onTabOpened(String webViewId) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	@Override
@@ -181,6 +193,6 @@ public class Addon extends BaseAddon {
 		}
 		
 		return false;
-	}
+	}	
 
 }
