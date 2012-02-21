@@ -66,12 +66,12 @@ public class Addon extends BaseAddon {
 	public void onUnbind() throws RemoteException {	}
 
 	@Override
-	public List<Action> onPageStarted(String webViewId, String url) throws RemoteException {
+	public List<Action> onPageStarted(String tabId, String url) throws RemoteException {
 		return null;
 	}
 	
 	@Override
-	public List<Action> onPageFinished(String webViewId, String url) throws RemoteException {
+	public List<Action> onPageFinished(String tabId, String url) throws RemoteException {
 		if ((url != null) &&
 				(!isUrlInAdblockerWhiteList(url))) {
 			if (mAdSweep != null) {
@@ -88,26 +88,26 @@ public class Addon extends BaseAddon {
 	}
 	
 	@Override
-	public List<Action> onTabClosed(String webViewId) throws RemoteException {
+	public List<Action> onTabClosed(String tabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Action> onTabOpened(String webViewId) throws RemoteException {
+	public List<Action> onTabOpened(String tabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
 	@Override
-	public String getContributedMainMenuItem() throws RemoteException {
+	public String getContributedMainMenuItem(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		return "AdblockerMainMenuItem";
 	}
 
 	@Override
-	public List<Action> onContributedMainMenuItemSelected(String currentTitle, String currentUrl) throws RemoteException {
+	public List<Action> onContributedMainMenuItemSelected(String currentTabId, String currentTitle, String currentUrl) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		AddonResponse response = new AddonResponse();
@@ -117,14 +117,14 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public String getContributedLinkContextMenuItem(int hitTestResult, String url) throws RemoteException {
+	public String getContributedLinkContextMenuItem(String currentTabId, int hitTestResult, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		return "AdblockerLinkMenuItem";
 	}
 
 	@Override
-	public List<Action> onContributedLinkContextMenuItemSelected(int hitTestResult, String url) throws RemoteException {
+	public List<Action> onContributedLinkContextMenuItemSelected(String currentTabId, int hitTestResult, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 		
@@ -135,43 +135,43 @@ public class Addon extends BaseAddon {
 	}
 	
 	@Override
-	public String getContributedHistoryBookmarksMenuItem() throws RemoteException {
+	public String getContributedHistoryBookmarksMenuItem(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Action> onContributedHistoryBookmarksMenuItemSelected() throws RemoteException {
+	public List<Action> onContributedHistoryBookmarksMenuItemSelected(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String getContributedBookmarkContextMenuItem() throws RemoteException {
+	public String getContributedBookmarkContextMenuItem(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Action> onContributedBookmarkContextMenuItemSelected(String title, String url) throws RemoteException {
+	public List<Action> onContributedBookmarkContextMenuItemSelected(String currentTabId, String title, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String getContributedHistoryContextMenuItem() throws RemoteException {
+	public String getContributedHistoryContextMenuItem(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Action> onContributedHistoryContextMenuItemSelected(String title, String url) throws RemoteException {
+	public List<Action> onContributedHistoryContextMenuItemSelected(String currentTabId, String title, String url) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
 	@Override
-	public List<Action> onUserAnswerQuestion(String questionId, boolean positiveAnswer) throws RemoteException {
+	public List<Action> onUserAnswerQuestion(String currentTabId, String questionId, boolean positiveAnswer) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
