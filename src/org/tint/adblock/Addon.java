@@ -100,6 +100,12 @@ public class Addon extends BaseAddon {
 	}
 	
 	@Override
+	public List<Action> onTabSwitched(String tabId) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
 	public String getContributedMainMenuItem(String currentTabId) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
