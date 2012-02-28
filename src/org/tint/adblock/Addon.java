@@ -106,7 +106,7 @@ public class Addon extends BaseAddon {
 	}
 	
 	@Override
-	public String getContributedMainMenuItem(String currentTabId) throws RemoteException {
+	public String getContributedMainMenuItem(String currentTabId, String currentTitle, String currentUrl) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 //		return "AdblockerMainMenuItem";
