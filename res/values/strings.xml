@@ -15,7 +15,6 @@
     
     <string name="AdblockerPreferenceActivityTitle">Tint Browser adblocker addon</string>
     <string name="AdblockerPreferenceActivitySubtitle">Adblocker white list</string>
-    <string name="AdblockerWhiteListEmpty">The adblocker white list is empty.</string>
     <string name="AdblockerWhiteListMenuAdd">Add</string>
     <string name="AdblockerWhiteListMenuClear">Clear</string>
     <string name="AdblockerWhiteListMenuReset">Reset to default values</string>
