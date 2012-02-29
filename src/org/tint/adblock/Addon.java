@@ -27,7 +27,7 @@ public class Addon extends BaseAddon {
 	
 	@Override
 	public int getCallbacks() throws RemoteException {
-		return Callbacks.PAGE_FINISHED | Callbacks.HAS_PREFERENCES_PAGE;
+		return Callbacks.PAGE_FINISHED | Callbacks.HAS_SETTINGS_PAGE;
 	}
 
 	@Override
@@ -183,7 +183,7 @@ public class Addon extends BaseAddon {
 	}
 
 	@Override
-	public void showAddonPreferenceActivity() throws RemoteException {
+	public void showAddonSettingsActivity() throws RemoteException {
 		Intent i = new Intent(mService, Preferences.class);
 		i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 		mService.startActivity(i);
