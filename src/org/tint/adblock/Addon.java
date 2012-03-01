@@ -177,7 +177,19 @@ public class Addon extends BaseAddon {
 	}
 	
 	@Override
-	public List<Action> onUserAnswerQuestion(String currentTabId, String questionId, boolean positiveAnswer) throws RemoteException {
+	public List<Action> onUserConfirm(String currentTabId, String questionId, boolean positiveAnswer) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public List<Action> onUserInput(String currentTabId, String questionId, boolean cancelled, String userInput) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public List<Action> onUserChoice(String currentTabId, String questionId, boolean cancelled, int userChoice) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
