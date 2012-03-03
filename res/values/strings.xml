@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="AddonName">Tint Browser Adblocker Addon</string>
-    <string name="AddonShortDescription">JavaScript-based adblocker.</string>
-    <string name="AddonDescription">This is an addon based on the now defunct AdSweep script. It works by injecting a piece of Javascript after a page has finished loading. The Javascript then remove ads. You should see ads disapears after a few time.</string>
-    <string name="AddonContact">http://www.myaddon.org/</string>
+    <string name="AddonName">Tint Browser Adblock Addon</string>
+    <string name="AddonShortDescription">JavaScript-based ad-blocker.</string>
+    <string name="AddonDescription">This is an addon based on the now defunct AdSweep script. It works by injecting a piece of Javascript after a page has finished loading. The Javascript then remove ads. You should see ads disapears after a few time. This addon is released under GPL v3.</string>
+    <string name="AddonContact">https://github.com/Anasthase/TintBrowserAdblockAddon</string>
     
     <string name="OK">OK</string>
     <string name="Cancel">Cancel</string>
@@ -12,8 +12,8 @@
     <string name="No">No</string>
     <string name="CannotBeUndone">This cannot be undone.</string>
     
-    <string name="AdblockerPreferenceActivityTitle">Tint Browser adblocker addon</string>
-    <string name="AdblockerPreferenceActivitySubtitle">Adblocker white list</string>
+    <string name="AdblockerPreferenceActivityTitle">Tint Browser adblock addon</string>
+    <string name="AdblockerPreferenceActivitySubtitle">White list</string>
     <string name="AdblockerWhiteListMenuAdd">Add</string>
     <string name="AdblockerWhiteListMenuClear">Clear</string>
     <string name="AdblockerWhiteListMenuReset">Reset to default values</string>

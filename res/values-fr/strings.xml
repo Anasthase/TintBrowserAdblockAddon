@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="AddonName">Tint Browser Adblock Addon</string>
+    <string name="AddonShortDescription">Bloqueur de publicité en Javascript.</string>
+    <string name="AddonDescription">Cet addon est basé sur le script AsSweep. Il fonctionne en injectant un morceau de Javascript après qu\'une page ait finie de se charger. Le Javascript supprime alors les publicités, vous devriez les voir disparaitre rapidement. Cet addon est sous license GPL v3.</string>
+    <string name="AddonContact">https://github.com/Anasthase/TintBrowserAdblockAddon</string>
+    
+    <string name="OK">OK</string>
+    <string name="Cancel">Annuler</string>
+    <string name="Yes">Oui</string>
+    <string name="No">Non</string>
+    <string name="CannotBeUndone">Cette action ne peut pas être annulée.</string>
+    
+    <string name="AdblockerPreferenceActivityTitle">Tint Browser adblock addon</string>
+    <string name="AdblockerPreferenceActivitySubtitle">Liste blanche</string>
+    <string name="AdblockerWhiteListMenuAdd">Ajouter</string>
+    <string name="AdblockerWhiteListMenuClear">Purger</string>
+    <string name="AdblockerWhiteListMenuReset">Valeurs par défaut</string>
+    <string name="AdblockerWhiteListDialogAddTitle">Ajouter à la liste blanche</string>
+    <string name="AdblockerWhiteListDialogClearTitle">Purger la liste blanche</string>
+    <string name="AdblockerWhiteListDialogResetTitle">Revenir aux valeurs par défaut</string>
+    <string name="AdblockerWhiteListDialogRemoveItemTitle">Supprimer cet élément ?</string>
+
+</resources>
