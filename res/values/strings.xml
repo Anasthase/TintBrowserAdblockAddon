@@ -3,9 +3,8 @@
     
     <string name="AddonName">Tint Browser Adblocker Addon</string>
     <string name="AddonShortDescription">JavaScript-based adblocker.</string>
-    <string name="AddonDescription">This is an addon based on the now defunct AdSweep script.</string>
-    <string name="AddonContactEMail">your.email@something.org</string>
-    <string name="AddonContactWebsite">http://www.myaddon.org/</string>
+    <string name="AddonDescription">This is an addon based on the now defunct AdSweep script. It works by injecting a piece of Javascript after a page has finished loading. The Javascript then remove ads. You should see ads disapears after a few time.</string>
+    <string name="AddonContact">http://www.myaddon.org/</string>
     
     <string name="OK">OK</string>
     <string name="Cancel">Cancel</string>

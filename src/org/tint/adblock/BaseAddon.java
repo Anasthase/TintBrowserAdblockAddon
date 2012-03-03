@@ -49,13 +49,8 @@ public abstract class BaseAddon extends IAddon.Stub {
 	}	
 
 	@Override
-	public String getEMail() throws RemoteException {
-		return mService.getString(R.string.AddonContactEMail);
-	}
-
-	@Override
-	public String getWebsite() throws RemoteException {
-		return mService.getString(R.string.AddonContactWebsite);
+	public String getContact() throws RemoteException {
+		return mService.getString(R.string.AddonContact);
 	}
 
 }
