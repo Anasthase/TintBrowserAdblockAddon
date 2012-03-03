@@ -141,6 +141,7 @@ public class Controller {
 		mAdblockerWhiteList.clear();
 		mAdblockerWhiteList.add("google.com/reader");
 		mAdblockerWhiteList.add("mail.google.com");
+		mAdblockerWhiteList.add("m.google.com");
 	}
 
 }
