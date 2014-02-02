@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="AddonName">Doplněk Tint Browser Adblock</string>
+    <string name="AddonShortDescription">Na JavaScriptu založený nástroj pro blokování reklam.</string>
+    <string name="AddonDescription">Tento doplněk je založen na nyní již nefunkčním AdSweep skriptu. Funguje tak, že po načtení stránky do ní umístí malý Javascriptový kód. Tento kód následně po krátké době odstraní reklamy. Tento doplněk je vydán pod licencí GPL v3.</string>
+    <string name="AddonContact">https://github.com/Anasthase/TintBrowserAdblockAddon</string>
+    
+    <string name="OK">OK</string>
+    <string name="Cancel">Zrušit</string>
+    <string name="Yes">Ano</string>
+    <string name="No">Ne</string>
+    <string name="CannotBeUndone">Tato operace nemůže být vrácena.</string>
+    
+    <string name="AdblockerPreferenceActivityTitle">Doplněk Tint Browser Adblock</string>
+    <string name="AdblockerPreferenceActivitySubtitle">White list</string>
+    <string name="AdblockerWhiteListMenuAdd">Přidat</string>
+    <string name="AdblockerWhiteListMenuClear">Vymazat</string>
+    <string name="AdblockerWhiteListMenuReset">Obnovit výchozí hodnoty</string>
+    <string name="AdblockerWhiteListDialogAddTitle">Přidat do white listu</string>
+    <string name="AdblockerWhiteListDialogClearTitle">Vymazat white list</string>
+    <string name="AdblockerWhiteListDialogResetTitle">Obnovit výchozí hodnoty</string>
+    <string name="AdblockerWhiteListDialogRemoveItemTitle">Odstranit tuto položku?</string>
+
+</resources>
